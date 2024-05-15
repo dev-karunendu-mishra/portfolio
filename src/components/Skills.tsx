@@ -21,7 +21,7 @@ const Skills = () => {
               className="flex flex-row items-center gap-2 justify-center"
             >
               <div className="radial-progress" style={style} role="progressbar">
-                {(skill.rating * 100) / 5} %
+                {`${(Number(skill.rating) * 100) / 5}`}
               </div>
               <div>
                 <div>{skill.skill}</div>
