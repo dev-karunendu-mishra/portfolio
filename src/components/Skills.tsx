@@ -18,7 +18,7 @@ const Skills = () => {
             <div
               className="radial-progress"
               style={{
-                "--value": (skill.rating * 100) / 5,
+                "--value": `${(skill.rating * 100) / 5}%`,
               }}
               role="progressbar"
             >
