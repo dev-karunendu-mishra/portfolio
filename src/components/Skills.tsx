@@ -10,29 +10,32 @@ const Skills = () => {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-3 xxl:grid-cols-3 gap-4 items-center">
-        {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="flex flex-row items-center gap-2 justify-center"
-          >
+        {skills.map((skill, index) => {
+          const style = {
+            "--size": "4rem",
+            "--value": (skill.rating * 100) / 5,
+          } as React.CSSProperties;
+          return (
             <div
-              className="radial-progress"
-              style={{
-                "--value": `${(skill.rating * 100) / 5}%`,
-              }}
-              role="progressbar"
+              key={index}
+              className="flex flex-row items-center gap-2 justify-center"
             >
-              {(skill.rating * 100) / 5} %
-            </div>
-            <div>
-              <div>{skill.skill}</div>
+              <div className="radial-progress" style={style} role="progressbar">
+                {(skill.rating * 100) / 5} %
+              </div>
               <div>
-                <Rate allowHalf disabled defaultValue={Number(skill.rating)} />
+                <div>{skill.skill}</div>
+                <div>
+                  <Rate
+                    allowHalf
+                    disabled
+                    defaultValue={Number(skill.rating)}
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-        ;
+          );
+        })}
       </div>
     </>
   );
