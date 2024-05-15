@@ -1,5 +1,6 @@
 import { menu } from "@/constants/appConstants";
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -10,7 +11,7 @@ const Navbar = () => {
         <nav className="flex justify-between bg-gray-900 text-white w-full">
           <div className="px-5 xl:px-12 py-2 flex w-full items-center">
             <a className="text-3xl font-bold font-heading" href="#">
-              <img className="h-9" src="/karunendumishra.svg" alt="logo" />
+              <Image className="h-9" src="/karunendumishra.svg" alt="logo" />
             </a>
 
             <ul className="hidden md:flex px-4 ms-auto font-semibold font-heading space-x-12">
