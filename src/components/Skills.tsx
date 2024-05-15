@@ -13,7 +13,7 @@ const Skills = () => {
         {skills.map((skill, index) => {
           const style = {
             "--size": "4rem",
-            "--value": (skill.rating * 100) / 5,
+            "--value": (Number(skill.rating) * 100) / 5,
           } as React.CSSProperties;
           return (
             <div
