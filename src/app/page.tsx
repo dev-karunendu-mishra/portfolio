@@ -5,7 +5,7 @@ import { skills } from "@/constants/appConstants";
 
 import Image from "next/image";
 import { useState } from "react";
-import { FaDownload, FaLinkedin } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   const [profileData, setProfileData] = useState(null);
@@ -50,9 +50,21 @@ export default function Home() {
               Connect with Me
             </a>
           </div>
+
+          {/* <div>
+            <a
+              href="https://www.linkedin.com/in/karunendu-mishra-59049b79/"
+              target="_blank"
+              className="flex items-center gap-2 bg-blue-900 hover:bg-blue-950 text-white rounded-lg px-6 py-2"
+            >
+              <FaGithub />
+              Github
+            </a>
+          </div> */}
+
           <div>
             <a
-              href="https://drive.google.com/file/d/10bzOqLpNCxm3p3_-ZstA4gSUZi-bz0tO/view?usp=sharing"
+              href="https://drive.google.com/file/d/1i8gYYKp1WtYQ_7YZgZfTaHmROaitumr-/view?usp=sharing"
               target="_blank"
               className="flex items-center gap-2 bg-green-600 hover:bg-green-800 text-white rounded-lg px-6 py-2"
             >
@@ -62,10 +74,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="sm:col-span-2 xl:col-span-1">
         <Skills />
       </div>
-      <div>
+      <div className="sm:col-span-2 xl:col-span-1">
         <Timeline timelineStyle="styleTwo" />
       </div>
     </div>

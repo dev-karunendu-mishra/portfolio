@@ -5,7 +5,7 @@ import { Rate } from "antd";
 const Skills = () => {
   return (
     <>
-      <div className="divider divider-start prose mb-12">
+      <div className="divider divider-start prose my-12">
         <h1>My Skills</h1>
       </div>
 
