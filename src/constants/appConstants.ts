@@ -5,9 +5,9 @@ export const menu = [
 
 export const experiences = [
   {
-    jobTitle: "SDE at PayPal / Senior Consultant",
-    organization: "Optimum Infosystem",
-    jobDescription:
+    title: "SDE at PayPal / Senior Consultant",
+    subtitle: "Optimum Infosystem",
+    description:
       "Member of PayPal’s SRE team and working as SDE here on PayPal’s SISP project. SISP is an incident submission portal of PapPal. Here I’m working on the frontend and backend of this. for backend here I’m working on node, express js and mysql and for frontend I’m using React",
     startDate: "Nov, 2022",
     endDate: "Present",
@@ -28,26 +28,25 @@ export const experiences = [
     ],
   },
   {
-    jobTitle:
-      "Senior Software Engineer / Full Stack Developer / Project Manager",
-    organization: "Nadcab Labs",
-    jobDescription:
+    title: "Senior Software Engineer / Full Stack Developer / Project Manager",
+    subtitle: "Nadcab Labs",
+    description:
       "Worked as Senior Software Developer majorly involved in developing projects from scratch using the tech stack of MERN Stack Development where my primary goal was to develop backend and frontend along with RESTful APIs.Worked with Crypto Exchange projects, where my key responsibility was to develop a trade engine for crypto exchange and backend RESTful APIs for crypto exchange along with its frontend.",
     startDate: "Sep, 2021",
     endDate: "Oct, 2022",
   },
   {
-    jobTitle: "Application Developer / Full Stack Developer",
-    organization: "uCertify",
-    jobDescription:
+    title: "Application Developer / Full Stack Developer",
+    subtitle: "uCertify",
+    description:
       "Worked as Application Developer / Full Stack Developer, as uCertify is an EdTech platform where I was working on a module called Develivery Engine. This module is the core of uCertify platform as this module is responsible for conducting exams/tests on platform and running virtual labs on platform. This module was written in PHP that was very old code so my responsibility was to adopt the latest updates of PHP and refactor this module. Originally this module was written in PHP with a functional programming approach so I refactored this and adopted OOPs approach to rewrite this module entirely.",
     startDate: "Dec, 2019",
     endDate: "Sep, 2021",
   },
   {
-    jobTitle: "Full Stack Developer",
-    organization: "Web Services",
-    //jobDescription: "",
+    title: "Full Stack Developer",
+    subtitle: "Web Services",
+    //description: "",
     startDate: "Dec, 2017",
     endDate: "Dec, 2019",
     responsibility: [
@@ -64,9 +63,9 @@ export const experiences = [
     ],
   },
   {
-    jobTitle: "Instructor / Faculty",
-    organization: "Spectrum Technologies",
-    //jobDescription: "",
+    title: "Instructor / Faculty",
+    subtitle: "Spectrum Technologies",
+    //description: "",
     startDate: "May, 2015",
     endDate: "Dec, 2017",
     responsibility: [

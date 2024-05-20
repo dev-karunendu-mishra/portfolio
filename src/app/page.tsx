@@ -10,7 +10,7 @@ import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Home() {
   const [profileData, setProfileData] = useState(null);
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2">
+    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
       <div className="col-span-2">
         <div className="avatar w-250 h-446 mask mask-squircle">
           <Image
@@ -78,7 +78,7 @@ export default function Home() {
         <Skills />
       </div>
       <div className="sm:col-span-2 xl:col-span-1">
-        <Timeline timelineStyle="styleTwo" />
+        <Timeline title="Professional Experience" timelineStyle="styleTwo" />
       </div>
     </div>
   );

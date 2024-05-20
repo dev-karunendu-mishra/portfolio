@@ -1,8 +1,10 @@
+import Link from "next/link";
 import React from "react";
+import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer p-2 bg-neutral text-neutral-content">
+    <footer className="p-2 bg-neutral text-neutral-content">
       {/* <aside>
         <svg
           width="50"
@@ -59,6 +61,15 @@ const Footer = () => {
           </a>
         </div>
       </nav> */}
+      <div className="flex flex-row items-center justify-center">
+        <div>
+          <span>
+            Designed &amp; Developed with
+            <FaHeart className="inline-block mx-2 text-red-700" />
+            by <Link href="/">Karunendu Mishra</Link>
+          </span>
+        </div>
+      </div>
     </footer>
   );
 };

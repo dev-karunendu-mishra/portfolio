@@ -20,7 +20,7 @@ export default function RootLayout({
         <AntdStyledComponentsRegistry>
           <Navbar />
           <div className="flex min-h-screen flex-col justify-between">
-            <main className="px-5 xl:px-12 py-5">{children}</main>
+            <main className="px-5 xl:px-12 py-5 xl:px-32">{children}</main>
             <Footer />
           </div>
         </AntdStyledComponentsRegistry>
